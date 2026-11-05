@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "questconverse"
+version = "1.0.0"
+description = "Host-agnostic Questforge-style local RPG runtime for LM Studio"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Achkata" }]
+dependencies = [
+  "openai>=1.54.0",
+  "requests>=2.32.0",
+  "rich>=13.7.0",
+  "typer>=0.12.5",
+  "jsonschema>=4.23.0",
+]
+
+[project.scripts]
+questconverse = "questconverse.cli:app"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["questconverse*"]
