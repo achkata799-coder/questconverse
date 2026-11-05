@@ -2,7 +2,9 @@
   "lmstudio": {
     "base_url": "http://localhost:1234/v1",
     "api_key": "lm-studio",
-    "model": "local-model"
+    "model": "local-model",
+    "temperature": 0.7,
+    "max_tokens": 1200
   },
   "campaign_root": "campaigns/default",
   "system_prompt_path": "prompts/questforge_system.md",
@@ -10,9 +12,16 @@
   "tool_policy_path": "prompts/tool_policy.md",
   "campaign_policy_path": "prompts/campaign_policy.md",
   "rules_policy_path": "prompts/rules_policy.md",
+  "visual_policy_path": "prompts/visual_policy.md",
   "session_policy_path": "prompts/session_policy.md",
-  "temperature": 0.7,
-  "max_turn_tokens": 900,
+  "allow_shell": true,
+  "allow_web": true,
+  "tool_timeout_seconds": 180,
+  "web_search_command": "",
+  "web_open_command": "",
+  "browser_screenshot_command": "",
+  "max_turn_tokens": 1200,
   "max_tool_rounds": 8,
+  "max_history_turns": 24,
   "opening_prompt": "Begin a vivid opening scene and ask the player what they do."
 }
