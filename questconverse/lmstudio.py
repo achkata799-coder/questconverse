@@ -21,4 +21,6 @@ class LMStudioClient:
             messages=messages,
             tools=tools,
             tool_choice="auto" if tools else None,
+            temperature=self.config.temperature,
+            max_tokens=self.config.max_tokens,
         )
