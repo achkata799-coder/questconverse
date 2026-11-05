@@ -1,0 +1,13 @@
+{
+  "lmstudio": {
+    "base_url": "http://localhost:1234/v1",
+    "api_key": "lm-studio",
+    "model": "local-model"
+  },
+  "campaign_root": "campaigns/default",
+  "system_prompt_path": "prompts/questforge_system.md",
+  "save_policy_path": "prompts/save_policy.md",
+  "tool_policy_path": "prompts/tool_policy.md",
+  "temperature": 0.7,
+  "max_turn_tokens": 900
+}

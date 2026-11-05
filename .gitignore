@@ -1,0 +1,7 @@
+# QuestConverse
+__pycache__/
+*.pyc
+.env
+config.json
+.campaigns/
+.dist/
